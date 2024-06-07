@@ -1,0 +1,341 @@
+@font-face {
+    font-family: 'Century Gothic';
+    /* Century Gothic
+    Century Gothic Bold
+    Century Gothic Bold Italic
+    Century Gothic Italic */
+    src: url('fonts/example-font.ttf') format('truetype');
+    /* Optionally, you can specify font-weight and font-style here */
+}
+
+:root{
+    --primary-color : #00ff48;
+    --text-color : #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../images/gd.jpeg);
+    background-repeat: no-repeat;
+    font-family: 'Century Gothic', sans-serif;
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    background-attachment: fixed;
+}
+
+a{
+    text-decoration: none;
+}
+
+.special_text{
+    color: var(--primary-color);
+}
+.title_text{
+    color: rgb(21, 21, 134);
+}
+ul{
+    list-style: none;
+}
+
+.cursor_pointer{
+    cursor: pointer;
+}
+
+
+#carouselExampleFade .carousel-item{
+    height: 800px;
+}
+/* #welcome , #whatWeDo , */
+ #carouselExampleFade , #popularCourse , #Accrediations , #clientReview , #companyReview{ 
+    background-color: #fff;
+}
+
+#carouselExampleFade .carousel-inner img{
+    object-fit: cover !important;
+    width: 100%;
+    height: 100%;
+}
+
+#welcome .companyName{
+    /* font-weight: 800; */
+}
+#welcome .view_courses{
+    background-color: #00ff48;
+    color: rgb(21, 21, 134);
+    transition: 1s;
+}
+#welcome .view_courses .fa-arrow-right{
+
+    display: none;
+    transition: 1s;
+}
+#welcome .view_courses:hover .fa-arrow-right{
+
+
+    display: inline-block;
+}
+
+.youtubevideo_frame{
+    width: 100%;
+    height: 100%;
+    /* height: 312px; */
+}
+/* ---------------------------- */
+
+#forBgDesign{
+    background: url(../images/bg-pattern-image-min.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    /* background-blend-mode: color; */
+
+}
+
+#whatWeDo .service_icons{
+    height: 40px;
+    width: 40px;
+}
+.service_box{
+    background-color: #fff;
+    transition: 0.5s;
+}
+.service_box:hover{
+    -webkit-box-shadow: 0px 0px 28px -1px rgba(0,0,0,0.23);
+    -moz-box-shadow: 0px 0px 28px -1px rgba(0,0,0,0.23);
+    box-shadow: 0px 0px 28px -1px rgba(0,0,0,0.23);
+}
+
+.icon_box , .service_content{
+    transform: translateY(-49px);
+}
+
+.icon_outer_border{
+    border: 1px solid rgb(218, 218, 218);
+}
+
+.service_box:hover .icon_outer_border{
+    border: 2px solid #00ff48;
+
+}
+.service_box:hover .service_title{
+  color: #00ff48;
+
+}
+
+/* ------------------------------------ */
+#acheivements{
+    background-color: rgba(56, 56, 56, 0.61);
+    color: #fff;
+}
+#acheivements .acheivements_icon{
+    height: 75px;
+}
+
+#sample{
+    background-color: #fff;
+    height: 1000px;
+}
+
+/* ------------------------------ */
+#popularCourse {
+    background: url(../images/circle_gradient.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: #fff;
+}
+#popularCourse .popular_course{
+    position: relative;
+    height: 300px;
+    border-radius: 20px;
+    overflow-y: hidden;
+    overflow: hidden;
+    transition: 1s;
+    /* transition: 1s; */
+}
+#popularCourse .popular_course_details{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.548);
+    right: 0;
+    left: 0;
+    bottom: -60px;
+    transition: 0.5s;
+}
+#popularCourse .popular_course:hover .popular_course_details{
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+#popularCourse .popular_course .popular_course_img{
+    height: inherit;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+
+}
+#popularCourse .popular_course:hover .popular_course_img{
+    transform: scale(1.15);
+}
+
+#popularCourse .popular_course_title{
+    color: #fff;
+}
+
+
+#popularCourse .container{
+   position: relative;
+}
+
+#popularCourse .l_carousel_icon , #popularCourse .r_carousel_icon{
+    position: absolute;
+    top: 37%;
+    z-index: 10;
+    background-color: #fff;
+    border: 1px solid rgb(187, 187, 187);
+}
+#popularCourse .l_carousel_icon:hover , #popularCourse .r_carousel_icon:hover{
+    -webkit-box-shadow: 0px 0px 28px -1px rgba(0,0,0,0.23);
+    -moz-box-shadow: 0px 0px 28px -1px rgba(0,0,0,0.23);
+    box-shadow: 0px 0px 28px -1px rgba(0,0,0,0.23);
+    border: 1px solid #00ff48;
+    background-color: #7affa0f3;
+}
+#popularCourse .l_carousel_icon{
+    left: 2%;
+}
+#popularCourse .r_carousel_icon{
+    right: 2%;
+    transform: rotate(180deg);
+}
+#popularCourse .left_icon , #popularCourse .right_icon {
+    height: 22px;
+}
+
+/* --------------------------------------------------- */
+
+ .accrediations_box{
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    outline: none;
+    overflow: hidden;
+    
+ }
+
+
+  .accrediations_box:hover::before {
+    animation: shine 1.5s ease-out infinite;
+  }
+  .accrediations_box::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.87),
+      rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+  }
+  
+  @keyframes shine {
+    0% {
+      left: -100px;
+    }
+  
+    60% {
+      left: 100%;
+    }
+  
+    to {
+      left: 100%;
+    }
+  }  
+
+
+/* -------------------------------------------- */
+#clientReview .customer_review_main_img{
+    transition: 0.3s;
+}
+#clientReview .customer_review_main_img:hover{
+    transform: scale(1.05);
+}
+#clientReview .client_profile{
+    height: 60px !important;
+    width: auto !important;
+}
+#clientReview .customer_review_section{
+    background: url(../images/emoji-bg.webp) no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#clientReview .customer_review_para{
+    maX-height: 250px;
+    overflow-y: auto;
+}
+#clientReview .lr_arrow{
+    height: fit-content;
+}
+#clientReview .lr_arrow:hover{
+    -webkit-box-shadow: 0px 0px 28px -1px rgba(51, 51, 51, 0.23);
+    -moz-box-shadow: 0px 0px 28px -1px rgba(48, 48, 48, 0.23);
+    box-shadow: 0px 0px 28px -1px rgba(36, 36, 36, 0.11);
+}
+#clientReview .left_arrow , #clientReview .right_arrow{
+    height: 25px;
+}
+#clientReview .right_arrow{
+    transform: rotate(180deg);
+}
+
+#clientReview .review_star , #clientReview .company_logo{
+    height: 20px;
+    width: auto !important;
+}
+#companyReview .company_logo{
+    height: 40px;
+    width: auto !important;
+}
+#companyReview .company_review_box{
+    background-color: rgb(233, 233, 233);
+    border-radius: 20px;
+    transition: 0.3s;
+}
+#companyReview .company_review_box:hover{
+    transform: scale(1.01);
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 28px -1px rgba(51, 51, 51, 0.23);
+    -moz-box-shadow: 0px 0px 28px -1px rgba(48, 48, 48, 0.23);
+    box-shadow: 0px 0px 28px -1px rgba(36, 36, 36, 0.11);
+}
+
+.google_stats{
+    font-size: 1.5em;
+}
+
+
+/* #clientReview .blockquote p:before {
+    content: "🙷";
+    color: #333;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: xx-large !important;
+
+}
+#clientReview .blockquote p::after {
+    content: "🙷";
+    color: #333;
+   
+    font-size: xx-large !important;
+} */
